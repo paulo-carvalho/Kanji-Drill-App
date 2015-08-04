@@ -198,7 +198,7 @@
 
     <script src="js/URI.js"></script>
     <!--  For mobile devices  -->
-    <script src="../platforms/android/platform_www/cordova.js"></script>
+    <script src="cordova.js"></script>
     <script src="js/media.js"></script>
     <script>
         $(document).foundation();
@@ -212,32 +212,7 @@
                 document.getElementById("music-lobby").play();
             }
         });
-
-        // Wait for device API libraries to load
-        //
-        document.addEventListener("deviceready", onDeviceReady, false);
-
-        // device APIs are available
-        //
-        function onDeviceReady() {
-            navigator.splashscreen.show();
-            playAudio();
-        }
-
-        var my_media = null;
-
-        function playAudio() {
-            // Create Media object from src
-            my_media = new Media('../sound/lobby.wav', onSuccess);
-            alert("Hello");
-        }
-
-        function onSuccess() {
-            // Play audio
-            my_media.play();
-        }
-
-
+        
         $("#japanese-program-website").click(function() {
             window.open('http://www.lehman.edu/academics/arts-humanities/japanese/index.html', '_blank', 'location=yes');
             return false;
