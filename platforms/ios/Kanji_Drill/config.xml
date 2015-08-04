@@ -21,6 +21,9 @@
         <plugin name="Globalization" value="CDVGlobalization" />
         <plugin name="InAppBrowser" value="CDVInAppBrowser" />
     </plugins>
+    <gap:plugin name="org.li8.inappbrowser" />
+    <access origin="http://www.lehman.edu/*" />
+    <access origin="https://github.com/*" />
     <preference name="KeyboardDisplayRequiresUserAction" value="true" />
     <preference name="SuppressesIncrementalRendering" value="false" />
     <preference name="UIWebViewBounce" value="true" />

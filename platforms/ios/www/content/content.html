@@ -18,7 +18,16 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../img/icon_sakura.png">
     <!-- End of Fav Icon -->
 </head>
-<body>
+<body class="lobby">
+
+    <audio id="audioCorrect" volume="0.5">
+        <source src="../sound/correct.m4a" type="audio/mpeg">
+        <source src="../sound/correct.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioIncorrect" volume="0.5">
+        <source src="../sound/incorrect.m4a" type="audio/mpeg">
+        <source src="../sound/incorrect.mp3" type="audio/mpeg">
+    </audio>
 
     <div class="row">
         <div class="large-12 columns">
@@ -117,9 +126,13 @@
 
     <div class="row">
         <div class="large-12 columns">
-            <div class="panel">
+            <hr />
+        </div>
+    </div>
 
-            </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <a class="button large expand" role="button" href="../index.html">Main Menu</a>
         </div>
     </div>
 
@@ -314,6 +327,8 @@
                     // User scores
                     score++;
 
+                    $("#audioCorrect").get(0).play();
+
                     // Overlays a transparent container to not allow "answer twice" bug
                     $(".overlay").removeClass("hide");
 
@@ -321,7 +336,8 @@
                     $(this).removeClass("secondary alert").addClass("success");
 
                     $("#feedbackAnswer").text("はい, よくできました。")
-                        .append(" <a id='nextKanji' class='button small' role='button' href='#'>Next &gt;&gt;</a>")
+                        .append("<p></p>"
+                            + "<a id='nextKanji' class='button small' role='button' href='#'>Next &gt;&gt;</a>")
                         .stop(true, true).fadeOut(50).fadeIn(500);
 
                     // Go to next kanji
@@ -341,6 +357,8 @@
 
                 // Action for wrong answer
                 $(".incorrect").click(function() {
+                    $("#audioIncorrect").get(0).play();
+
                     // Overlays a transparent container to not allow "answer twice" bug
                     $(".overlay").removeClass("hide");
 
@@ -350,8 +368,10 @@
                     $(".correct").removeClass("secondary").addClass("success");
 
                     // .fadeOut(50) is a hack to message appear in IE8+
-                    $("#feedbackAnswer").text("いいえ, ちがいます。正しい 答え: " + json.data[numbers[index-1]].correctHiragana)
-                        .append("</p><a id='nextKanji' class='button small' role='button' href='#'>Next &gt;&gt;</a>")
+                    $("#feedbackAnswer").text("いいえ, ちがいます。正しい 答え: ")
+                        .append("<p>" + json.data[numbers[index-1]].correctHiragana + "</p>"
+                            + "<p></p>"
+                            + "<a id='nextKanji' class='button small' role='button' href='#'>Next &gt;&gt;</a>")
                         .stop(true, true).fadeOut(50).fadeIn(500);
 
                     // Go to next kanji

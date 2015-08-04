@@ -1,5 +1,9 @@
 {
-    "chapter": 12 ,
+    "genkiBook": 1,
+    "chapter": 12,
+    "recommendedChapters": [
+        "11", "13", "14"
+    ],
     "data": [
         {
             "id": 1,
@@ -34,7 +38,7 @@
             "correctHiragana": "むかしむかし",
             "alternatives": [
                 "むかしばなし",
-                "むかま"
+                "むかしぶかし"
             ]
         },
         {
@@ -78,8 +82,8 @@
             "kanji": "神社",
             "correctHiragana": "じんじゃ",
             "alternatives": [
-                "しんとう",
-                "こうじん"
+                "しんじゃ",
+                "じんしゃ"
             ]
         },
         {
@@ -115,7 +119,7 @@
             "correctHiragana": "はやおきする",
             "alternatives": [
                 "はやくおきする",
-                "あさかきする"
+                "そうきする"
             ]
         },
         {

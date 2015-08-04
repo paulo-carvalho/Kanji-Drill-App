@@ -1,13 +1,19 @@
 {
+    "genkiBook": 2,
     "chapter": 15,
+    "recommendedChapters": [
+        "14",
+        "16",
+        "17"
+    ],
     "data": [
         {
             "id": 1,
             "kanji": "死ぬ",
             "correctHiragana": "しぬ",
             "alternatives": [
-                "ため",
-                "のめ"
+                "いぬ",
+                "じぬ"
             ]
         },
         {
@@ -15,8 +21,8 @@
             "kanji": "死",
             "correctHiragana": "し",
             "alternatives": [
-                "た",
-                "で"
+                "しん",
+                "じ"
             ]
         },
         {
@@ -51,7 +57,7 @@
             "kanji": "注意する",
             "correctHiragana": "ちゅういする",
             "alternatives": [
-                "せんみする",
+                "ちゅうみする",
                 "しょういする"
             ]
         },
@@ -69,8 +75,8 @@
             "kanji": "用意する",
             "correctHiragana": "よういする",
             "alternatives": [
-                "だわいする",
-                "すいする"
+                "ようじする",
+                "すいいする"
             ]
         },
         {
@@ -115,7 +121,7 @@
             "correctHiragana": "ちゅうもんする",
             "alternatives": [
                 "じゅうぶんする",
-                "もんぶんする"
+                "ちゅうぶんする"
             ]
         },
         {
@@ -150,8 +156,8 @@
             "kanji": "初夏",
             "correctHiragana": "しょか",
             "alternatives": [
-                "はななつ",
-                "はじなつ"
+                "はつなつ",
+                "はつか"
             ]
         },
         {
@@ -234,7 +240,7 @@
                 "せまい",
                 "みじかい"
             ]
-        },　
+        },
         {
             "id": 27,
             "kanji": "広場",
@@ -249,7 +255,7 @@
             "kanji": "広島",
             "correctHiragana": "ひろしま",
             "alternatives": [
-                "こうこく",
+                "ひろとり",
                 "ひろば"
             ]
         },
@@ -357,8 +363,8 @@
             "kanji": "脱走",
             "correctHiragana": "だっそう",
             "alternatives": [
-                "みのはし",
-                "ちんばし"
+                "だつそう",
+                "だつはし"
             ]
         },
         {
@@ -394,7 +400,7 @@
             "correctHiragana": "けんこく",
             "alternatives": [
                 "かいこく",
-                "そんくに"
+                "けんくに"
             ]
         },
         {
@@ -402,7 +408,7 @@
             "kanji": "地下",
             "correctHiragana": "ちか",
             "alternatives": [
-                "どんち",
+                "じか",
                 "ちした"
             ]
         },
@@ -411,8 +417,8 @@
             "kanji": "地下鉄",
             "correctHiragana": "ちかてつ",
             "alternatives": [
-                "ちしたぎん",
-                "どんちかつ"
+                "ちしたてつ",
+                "じかてつ"
             ]
         },
         {
@@ -447,8 +453,8 @@
             "kanji": "広場",
             "correctHiragana": "ひろば",
             "alternatives": [
-                "しろばん",
-                "ひろばい"
+                "しろば",
+                "こうば"
             ]
         },
         {
@@ -484,7 +490,7 @@
             "correctHiragana": "あし",
             "alternatives": [
                 "いし",
-                "いそ"
+                "たし"
             ]
         },
         {
@@ -546,8 +552,8 @@
             "kanji": "通勤",
             "correctHiragana": "つうきん",
             "alternatives": [
-                "とおかつ",
-                "かよそう"
+                "とおきん",
+                "かよきん"
             ]
         }
     ]
