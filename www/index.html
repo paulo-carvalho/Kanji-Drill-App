@@ -30,7 +30,12 @@
 
     <div class="row">
         <div class="large-11 medium-11 small-10 columns">
-            <h1>漢字　ドリル　ようこそ</h1>
+            <!-- Title wrapped in span tags to avoid word-break on cellphones -->
+            <h1>
+                <span class="japanese-words">漢字</span>
+                <span class="japanese-words">ドリル</span>　
+                <span class="japanese-words">ようこそ</span>
+            </h1>
         </div>
         <div class="large-1 medium-1 small-2 columns">
             <h1><i class="fi-volume text-right music-volume"></i></h1>
@@ -187,7 +192,7 @@
     <div class="row">
         <div class="large-12 columns">
             <div class="panel">
-                <p>If you are a developer, check our project on <a id="kanji-drill-github" href="#">GitHub</a>.</p>
+                <p>You can also check the <a id="kanji-drill-github" href="#">Desktop version</a>.</p>
             </div>
         </div>
     </div>
@@ -212,14 +217,14 @@
                 document.getElementById("music-lobby").play();
             }
         });
-        
+
         $("#japanese-program-website").click(function() {
-            window.open('http://www.lehman.edu/academics/arts-humanities/japanese/index.html', '_blank', 'location=yes');
+            window.open('http://japanese-lehman.github.io/', '_blank', 'location=yes');
             return false;
         });
 
         $("#kanji-drill-github").click(function() {
-            window.open('https://github.com/paulo-carvalho/KanjiDrill', '_blank', 'location=yes');
+            window.open('http://japanese-lehman.github.io/KanjiDrill', '_blank', 'location=yes');
             return false;
         });
     </script>

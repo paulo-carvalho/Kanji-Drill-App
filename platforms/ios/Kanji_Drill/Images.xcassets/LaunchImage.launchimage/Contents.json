@@ -73,14 +73,14 @@
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
-      "filename" : "768x1024px.png",
+      "filename" : "768x1004px.png",
       "scale" : "1x"
     },
     {
       "orientation" : "portrait",
       "idiom" : "ipad",
       "extent" : "to-status-bar",
-      "filename" : "1536x2048px.png",
+      "filename" : "1536x2008px.png",
       "scale" : "2x"
     }
   ],
